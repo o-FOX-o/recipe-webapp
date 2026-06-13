@@ -1,1 +1,0 @@
-Place your existing RS-logo.png file in this folder.
