@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/cards.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <script src="/js/home.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <h1>
+    Welcome to the
+    <span class="brand-title">
+      Recipe Share
+      <img class="brand-logo" src="/src/RS-logo.png" alt="Recipe Share logo">
+    </span>
+  </h1>
+  <p>Discover delicious recipes and share your own!</p>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="/">Recipes</a></li>
+      <li><a href="/publish">Publish Recipe</a></li>
+      <li><a href="/saved">Saved Recipes</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <div class="recipe-layout">
+      <div class="recipe-main">
+        <section id="hero">
+          <h2>Discover and share recipes</h2>
+          <p>Find meals by category, time, and difficulty.</p>
+        </section>
+        <section id="recipes" aria-label="Recipe results"></section>
+      </div>
+      <section id="filters">
+        <h2>Filter Recipes</h2>
+        <div>
+          <label for="recipe-search">Search recipes or categories</label>
+          <input type="search" id="recipe-search" name="recipe-search" placeholder="Search breakfast, chicken, vegan...">
+        </div>
+        <div>
+          <button type="button" data-category="all">All</button>
+          <button type="button" data-category="breakfast">Breakfast</button>
+          <button type="button" data-category="lunch">Lunch</button>
+          <button type="button" data-category="dinner">Dinner</button>
+          <button type="button" data-category="dessert">Dessert</button>
+        </div>
+        <div>
+          <button type="button" data-time="all">Any time</button>
+          <button type="button" data-time="quick">Under 15 min</button>
+          <button type="button" data-time="medium">15–30 min</button>
+          <button type="button" data-time="long">30+ min</button>
+        </div>
+      </section>
+    </div>
+    <template id="recipe-card-template">
+  <article class="recipe-card">
+    <div class="recipe-card-content">
+      <h3 class="recipe-title"></h3>
+      <p class="recipe-category"></p>
+      <p class="recipe-meta"></p>
+      <div class="recipe-details">
+        <h4>Ingredients</h4>
+        <ul class="recipe-ingredients"></ul>
+        <h4>Steps</h4>
+        <ol class="recipe-steps"></ol>
+        <p class="recipe-comment"></p>
+      </div>
+    </div>
+    <div class="recipe-card-cover">
+      <img class="recipe-image" src="" alt="">
+      <h3 class="recipe-title"></h3>
+      <p class="recipe-category"></p>
+      <p class="recipe-meta"></p>
+    </div>
+  </article>
+</template>
+  </main>
+<footer class="site-footer">
+  <p>&copy; 2026 Recipe Share. All rights reserved.</p>
+</footer>
+</body>
+</html>

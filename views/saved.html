@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Recipe Share</title>
-  <link rel="stylesheet" href="../public/css/general.css">
+  <title>Saved Recipes | Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/cards.css">
+  <link rel="stylesheet" href="/css/account.css">
+  <script src="/js/saved.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -27,9 +30,10 @@
   </nav>
 </header>
   <main class="page-main">
-    <section class="content-card">
-      <h2>About Recipe Share</h2>
-      <p>Recipe Share is a demo full-stack project where users will be able to create accounts, publish recipes, discover meals, and save recipes they like.</p>
+    <section class="account-panel">
+      <h2>Saved Recipes</h2>
+      <p>Your saved recipes will appear here after login.</p>
+      <div id="saved-recipes" class="recipe-grid"></div>
     </section>
   </main>
 <footer class="site-footer">

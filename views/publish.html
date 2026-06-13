@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publish Recipe | Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/publish.css">
+  <script src="/js/publish.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <h1>
+    Welcome to the
+    <span class="brand-title">
+      Recipe Share
+      <img class="brand-logo" src="/src/RS-logo.png" alt="Recipe Share logo">
+    </span>
+  </h1>
+  <p>Discover delicious recipes and share your own!</p>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="/">Recipes</a></li>
+      <li><a href="/publish">Publish Recipe</a></li>
+      <li><a href="/saved">Saved Recipes</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="page-main">
+    <section class="publish-card">
+      <h2>Publish a Recipe</h2>
+      <form id="publish-form">
+        <label for="recipe-title">Recipe title</label>
+        <input id="recipe-title" name="title" type="text" required>
+        <label for="recipe-category">Category</label>
+        <input id="recipe-category" name="category" type="text" placeholder="Breakfast, Algerian, High protein..." required>
+        <label for="recipe-time">Cooking time in minutes</label>
+        <input id="recipe-time" name="timeMinutes" type="number" min="1" required>
+        <label for="recipe-difficulty">Difficulty</label>
+        <select id="recipe-difficulty" name="difficulty" required>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <label for="recipe-image">Image URL</label>
+        <input id="recipe-image" name="image" type="url">
+        <label for="recipe-ingredients">Ingredients: one per line</label>
+        <textarea id="recipe-ingredients" name="ingredients" rows="6" required></textarea>
+        <label for="recipe-steps">Steps: one per line</label>
+        <textarea id="recipe-steps" name="steps" rows="6" required></textarea>
+        <label for="recipe-comment">Comment</label>
+        <textarea id="recipe-comment" name="comment" rows="3"></textarea>
+        <button type="submit">Publish Recipe</button>
+      </form>
+    </section>
+  </main>
+<footer class="site-footer">
+  <p>&copy; 2026 Recipe Share. All rights reserved.</p>
+</footer>
+</body>
+</html>

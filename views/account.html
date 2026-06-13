@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account | Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/cards.css">
+  <link rel="stylesheet" href="/css/account.css">
+  <script src="/js/account.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <h1>
+    Welcome to the
+    <span class="brand-title">
+      Recipe Share
+      <img class="brand-logo" src="/src/RS-logo.png" alt="Recipe Share logo">
+    </span>
+  </h1>
+  <p>Discover delicious recipes and share your own!</p>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="/">Recipes</a></li>
+      <li><a href="/publish">Publish Recipe</a></li>
+      <li><a href="/saved">Saved Recipes</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="page-main">
+    <section class="account-panel">
+      <h2>My Account</h2>
+      <p id="account-message">Account details will appear here after login.</p>
+      <dl class="account-details">
+        <div><dt>Name</dt><dd id="account-name">Demo User</dd></div>
+        <div><dt>Email</dt><dd id="account-email">demo@example.com</dd></div>
+      </dl>
+    </section>
+    <section class="account-panel">
+      <h2>My Published Recipes</h2>
+      <div id="my-recipes" class="recipe-grid"></div>
+    </section>
+  </main>
+<footer class="site-footer">
+  <p>&copy; 2026 Recipe Share. All rights reserved.</p>
+</footer>
+</body>
+</html>

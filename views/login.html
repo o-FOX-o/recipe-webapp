@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/auth.css">
+  <script src="/js/auth.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <h1>
+    Welcome to the
+    <span class="brand-title">
+      Recipe Share
+      <img class="brand-logo" src="/src/RS-logo.png" alt="Recipe Share logo">
+    </span>
+  </h1>
+  <p>Discover delicious recipes and share your own!</p>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="/">Recipes</a></li>
+      <li><a href="/publish">Publish Recipe</a></li>
+      <li><a href="/saved">Saved Recipes</a></li>
+      <li><a href="/account">Account</a></li>
+      <li><a href="/about">About Us</a></li>
+    </ul>
+  </nav>
+</header>
+  <main class="page-main">
+    <section class="auth-card">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" name="password" type="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>New here? <a href="/register">Create an account</a>.</p>
+    </section>
+  </main>
+<footer class="site-footer">
+  <p>&copy; 2026 Recipe Share. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Recipe Share</title>
-  <link rel="stylesheet" href="../public/css/general.css">
+  <title>Recipe | Recipe Share</title>
+  <link rel="stylesheet" href="/css/general.css">
+  <link rel="stylesheet" href="/css/recipe.css">
+  <script src="/js/recipe.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -27,10 +29,18 @@
   </nav>
 </header>
   <main class="page-main">
-    <section class="content-card">
-      <h2>About Recipe Share</h2>
-      <p>Recipe Share is a demo full-stack project where users will be able to create accounts, publish recipes, discover meals, and save recipes they like.</p>
-    </section>
+    <article class="recipe-page-card">
+      <img id="recipe-page-image" src="" alt="">
+      <div>
+        <h2 id="recipe-page-title">Recipe title</h2>
+        <p id="recipe-page-meta">Category · Time · Difficulty</p>
+        <h3>Ingredients</h3>
+        <ul id="recipe-page-ingredients"></ul>
+        <h3>Steps</h3>
+        <ol id="recipe-page-steps"></ol>
+        <p id="recipe-page-comment"></p>
+      </div>
+    </article>
   </main>
 <footer class="site-footer">
   <p>&copy; 2026 Recipe Share. All rights reserved.</p>
