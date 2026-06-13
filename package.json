@@ -1,14 +1,15 @@
 {
-  "name": "back-end",
+  "name": "recipe-webapp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "start": "node server.js",
+    "devstart": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Recipe Share full-stack demo project",
   "dependencies": {
     "express": "^5.2.1"
   },
